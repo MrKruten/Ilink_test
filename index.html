@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,400,500,600,700,800,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,400,500,600,700,800,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>ILink</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="img/header/Logo.png" alt="Logo">
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#profile" class="menu__link">Jane Doe</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#tell_us" class="menu__link">Tell us about yourself</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#slider" class="menu__link">Slider</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="page__profile">
+                <div class="profile" id=“profile>
+                    <div class="profile__avatar">
+                        <img src="img/profile/Avatar.png" alt="">
+                    </div>
+                    <div class="profile__info">
+                        <h1>Jane Doe</h1>
+                        <ul class="info__general_info">
+                            <ul class="general_info">
+                                <li class="general_info__clause">Date of birth</li>
+                                <li class="">21.04.2001</li>
+                            </ul>
+                            <ul class="general_info">
+                                <li class="general_info__clause">Gender</li>
+                                <li class="">Female</li>
+                            </ul>
+                            <ul class="general_info">
+                                <li class="general_info__clause">Country</li>
+                                <li class="">Corea</li>
+                            </ul>
+                        </ul>
+                        <div class="profile__description">
+                            <h3>About me</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__form" id="tell_us">
+                <form action="#" id="form" method="post" enctype="multipart/form-data" class="form">
+                    <h2>Tell us about yourself</h2>
+                    <ul class="form__fields" id="fields1">
+                        <li>
+                            <label for="username">Your name</label>
+                            <input class="_req" type="text" name="username" id="username"
+                                placeholder="Tell us your name">
+                        </li>
+                        <li>
+                            <label for="usergender">Your gender</label>
+                            <div class="select">
+                                <div id="select" class="select__header select__placeholder">
+                                    <span class="select__current select__placeholder">Chose your gender</span>
+                                    <div class="select__icon"><img src="img/form/selectIcon.png" alt="selectIcon"></div>
+                                </div>
+                                <div class="select__body">
+                                    <div class="select__item">Male</div>
+                                    <hr>
+                                    <div class="select__item">Female</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="form__fields hidden-fields" id="fields2">
+                        <li>
+                            <label for="usercountry">Your country</label>
+                            <input class="_req" type="text" name="usercountry" id="usercountry"
+                                placeholder="Where are you from?">
+                        </li>
+                        <li>
+                            <label for="usercity">Your City</label>
+                            <input class="_req" type="text" name="usercity" id="usercity"
+                                placeholder="Your native city">
+                        </li>
+                        <li>
+                            <label for="userbirth">Your date of birth</label>
+                            <input class="field__date _req" type="date" name="userbirth" id="userbirth">
+                        </li>
+                    </ul>
+                    <div class="form__upload hidden-fields" id="fields3">
+                        <span>Proof your identity with some documents</span>
+                        <input type="file" id="upload" class="hide">
+                        <label for="upload" class="upload">Add document</label>
+                    </div>
+                    <div id='file' class="form__file hidden-fields">
+                        <div class="preview__image">
+                            <img id="formPreview" src="img/form/fileImagepng.png" alt="Preview file">
+                        </div>
+                        <div class="file__text">
+                            <input class="file__name" type="text" value="File_name" readonly="readonly" id="filename">
+                            <input class="file__format" type="text" value="File_format" readonly="readonly" id="format">
+                        </div>
+                        <div class="file__delete">
+                            <img src="img/form/delete.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="form__submit">
+                        <button id='submitButton' disabled type="submit" class="form__button">Send info</button>
+                        <span id='complete' class="complete hidden-fields _unvisible">
+                            <img src="img/form/complete.png" alt="Complete">
+                            <label class="complete__label">Completed</label>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div id="slider" class="page__slider">
+            <div class="slider">
+                <div class="item">
+                    <img src="img/slider/slide1.png" alt="Slide 1">
+                    <div class="slideText">
+                        <h2>Slide this photo</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/slider/slide2.png" alt="Slide 2">
+                    <div class="slideText">
+                        <h2>Slide this photo</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/slider/slide3.png" alt="Slide 3">
+                    <div class="slideText">
+                        <h2>Slide this photo</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+            </div>
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
